@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="dashboard.css" />
+        <title>Dashboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <h1 id="dashboard-title">Dashboard</h1>
+
+        <div class="dashboard-content">
+            <div id="user-info">
+                <span id="email">Email: </span><span id="outputEmail"></span
+                ><br />
+                <span id="name">Name: </span><span id="outputName"></span><br />
+                <span id="password">Password: </span
+                ><span id="outputPassword"></span><br />
+                <div id="logout">Logout</div>
+            </div>
+
+            <div class="quote-container">
+                <div id="quote">Loading...</div>
+                <div id="author"></div>
+                <div class="buttons">
+                    <button class="toggle-btn" onclick="toggleDarkMode()">
+                        Toggle Dark Mode
+                    </button>
+                </div>
+            </div>
+
+            <!-- Weather Card -->
+            <div class="weather-container">
+                <div class="weather-card">
+                    <h1 id="city-name">Loading...</h1>
+                    <input
+                        type="text"
+                        id="zip-input"
+                        placeholder="Enter ZIP code"
+                    />
+                    <button id="get-weather-btn">Get Weather</button>
+                    <div id="weather-info">
+                        <h2 id="temperature">--°</h2>
+                        <p id="description">--</p>
+                        <p id="wind-speed">Wind: --</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="dashboard.js"></script>
+    </body>
+</html>
