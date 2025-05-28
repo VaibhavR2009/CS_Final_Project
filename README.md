@@ -38,7 +38,7 @@ An explanation of each of the files in the format:
 index.html
 This file contains HTML for the login page. The basic structure of the login and signup page is created here and is linked to the CSS for design and JS for functionality. 
 
-	login.css
+login.css
 This file contains the code that is responsible for the design and controls the visual representation of index.html including the fonts, colors, layout, spacing, and animations. 
 
 login.js
