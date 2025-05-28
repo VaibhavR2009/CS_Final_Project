@@ -1,18 +1,11 @@
-# CS_Final_Project
-An encrypted login and signup page with a small dashboard that contains a random quote generator and a weather app
+#**Encryption with login and signup**
+An encrypted login and signup page with a small dashboard that contains a random quote generator and a weather app. The data that is entered by the user is encrypted and saved in a database. 
 
 ___________________________________
-
-**Encryption with login and signup**
-
-This project is a login and signup page that 
-encrypts the data that is inputted by the user and 
-decrypts when outputting the information.
 
 *Note: Hypertext Markup Language will be referred to as HTML, 
 Cascading Style Sheets will be referred to as CSS and 
 Javascript will be referred to as JS*
-
 
 
 
