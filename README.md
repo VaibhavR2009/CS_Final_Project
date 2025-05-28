@@ -58,7 +58,6 @@ This file contains the javascript code that is responsible for asynchronous func
 ________________________________
 
 **Features**
-Features include:
 
 **Shoulder surfing prevention**
 Malicious actors are unable to shoulder surf using this login page because the password is hidden and shown as dots instead of the typed character. If the user requires, they can click on an icon to reveal their password. 
