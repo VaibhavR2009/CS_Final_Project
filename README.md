@@ -1,4 +1,4 @@
-#**Encryption with login and signup**
+# Encryption with login and signup
 An encrypted login and signup page with a small dashboard that contains a random quote generator and a weather app. The data that is entered by the user is encrypted and saved in a database. 
 
 ___________________________________
