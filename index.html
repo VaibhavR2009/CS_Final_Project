@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+    <div class="container">
+      <div class="form-container">
+        <div class="toggle-container">
+          <button id="loginBtn" class="toggle-btn active">Login</button>
+          <button id="signupBtn" class="toggle-btn">Sign Up</button>
+        </div>
+
+        <form id="loginForm" class="form login-form active">
+          <div class="form-content">
+            <h2>Login</h2>
+            <div class="form-group">
+              <label for="loginEmail">Email</label>
+              <input type="email" id="loginEmail" required />
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Password</label>
+              <input
+                type="password"
+                id="loginPassword"
+                class="password-field"
+                required
+              />
+              <span class="password-toggle" data-for="loginPassword">
+                <i id="eye" class="fas fa-eye"></i>
+              </span>
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+          </div>
+        </form>
+
+        <form id="signupForm" class="form signup-form">
+          <div class="form-content">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+              <label for="signupName">Full Name</label>
+              <input type="text" id="signupName" required />
+            </div>
+            <div class="form-group">
+              <label for="signupEmail">Email</label>
+              <input type="email" id="signupEmail" required />
+            </div>
+            <div class="form-group">
+              <label for="signupPassword">Password</label>
+              <input
+                type="password"
+                id="signupPassword"
+                class="password-field"
+                required
+              />
+              <span class="password-toggle" data-for="signupPassword">
+                <i id="eye" class="fas fa-eye"></i>
+              </span>
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                class="password-field"
+                required
+              />
+              <span class="password-toggle" data-for="confirmPassword">
+                <i id="eye" class="fas fa-eye"></i>
+              </span>
+            </div>
+            <button type="submit" class="submit-btn">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="passwordReq">
+      <p class="reqHeading">Password Requirements:</p>
+      <ul class="listReq">
+        <li>At least 12 characters</li>
+        <li>At least one special character</li>
+        <li>At least one uppercase letter</li>
+        <li>At least one lowercase letter</li>
+        <li>At least one number</li>
+      </ul>
+    </div>
+
+    <script type="module" src="login.js"></script>
+    <script type="module" src="encrypt.js"></script>
+  </body>
+</html>
